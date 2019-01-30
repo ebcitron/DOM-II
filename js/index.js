@@ -36,6 +36,46 @@ h2dudes[0].addEventListener('wheel', e => {
 const imgss = document.querySelectorAll('img');
 
 imgss[1].addEventListener('drag', e => {
-   h2dudes[1].textContent ='WOAH THERE, PUT ME DOWN';
+   h2dudes[1].textContent ='WOAH THERE, PUT ME DOWN, try the guy below';
 
+})
+
+
+imgss[2].addEventListener('dblclick', e => {
+    h2dudes[2].textContent = "come on.. im sleeping.. push someone elses buttons";
+})
+
+const buttonss = document.querySelectorAll('.btn');
+
+
+
+const h4bros = document.querySelectorAll('h4');
+
+
+buttonss[0].addEventListener('mouseenter', e => {
+    h4bros[0].textContent = 'Dare you to copy me';
+    h4bros[0].style.color = 'purple';
+})
+
+
+h4bros[0].addEventListener('copy', e => {
+    h4bros[1].style.color = 'red';
+    h4bros[1].style.border = '1px solid blue';
+    h4bros[1].textContent = "no, copy me";
+})
+
+
+const theMeat = document.querySelector('.container');
+
+
+theMeat.addEventListener('click', e => {
+    e.currentTarget.style.color = 'purple';
+})
+
+
+
+navvy.addEventListener('click', e =>{
+    e.preventDefault();
+
+console.log(navvy);
 })
